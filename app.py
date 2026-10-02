@@ -3,6 +3,12 @@ import pandas as pd
 import numpy as np
 import joblib
 
+model = joblib.load('StudentPerformanceFactors.csv.pkl')
+
+encoder = joblib.load('StudentPerformanceFactors.csv_encoder.pkl')
+
+feature_info = joblib.load('StudentPerformanceFactors.csv_info.pkl')
+
 # Load trained model
 model = joblib.load(
     r'C:\Users\ADMIN\Startup Project\StudentPerformanceFactors.csv.pkl'
